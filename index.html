@@ -1,1 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>画像クイズ</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+
+  <h1 id="title">画像クイズ</h1>
+
+  <div class="quiz-box">
+    <p>Q. この画像は何を表していますか？</p>
+
+    <!-- 問題画像 -->
+    <img id="quizImage" src="https://via.placeholder.com/600x400?text=HTML" alt="クイズ画像">
+
+    <button onclick="checkAnswer('A')">A. CSS</button>
+    <button onclick="checkAnswer('B')">B. JavaScript</button>
+    <button onclick="checkAnswer('C')">C. HTML</button>
+
+    <p id="result"></p>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
 
