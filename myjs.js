@@ -25,17 +25,17 @@ function timeUp() {
   result.style.color = "blue";
 }
 
-function quizAnswer(answer) {
+function nazo1() {
+  var ans = document.getElementById("answer").value;
+
   clearInterval(timerID);
 
-  let result = document.getElementById("quizResult");
+  let result = document.getElementById("answer");
 
-  if (answer === "HTML") {
-    result.innerHTML = "正解！🎉 HTMLです";
-    result.style.color = "green";
+  if (ans == "夢") {
+    document.getElementById("result").textContent = "あたり！";
   } else {
-    result.innerHTML = "不正解…😢";
-    result.style.color = "red";
+    document.getElementById("result").textContent = "はずれ";
   }
 }
 
