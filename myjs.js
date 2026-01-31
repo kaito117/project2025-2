@@ -1,7 +1,6 @@
 let time = 10;
 let timerID = null;
 
-
 window.onload = function () {
   startTimer();
 };
@@ -25,17 +24,19 @@ function timeUp() {
   result.style.color = "blue";
 }
 
-function nazo1() {
-  var ans = document.getElementById("answer").value;
 
+function nazo() {
   clearInterval(timerID);
 
-  let result = document.getElementById("answer");
+  let ans = document.getElementById("answer").value;
+  let result = document.getElementById("quizResult");
 
-  if (ans == "モノマネ") {
-    document.getElementById("result").textContent = "あたり！";
+  if (ans === "モノマネ") {
+    result.textContent = "あたり！";
+    result.style.color = "green";
   } else {
-    document.getElementById("result").textContent = "はずれ";
+    result.textContent = "はずれ";
+    result.style.color = "red";
   }
 }
 
@@ -51,4 +52,5 @@ function imgSmall() {
 function imgNormal() {
   document.getElementById("quizImg").className = "imageNormal";
 }
+
 
