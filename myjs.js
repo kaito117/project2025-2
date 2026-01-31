@@ -6,6 +6,7 @@ window.onload = function () {
   startTimer();
 };
 
+
 function startTimer() {
   timerID = setInterval(function () {
     time--;
@@ -20,10 +21,9 @@ function startTimer() {
 
 function timeUp() {
   let result = document.getElementById("quizResult");
-  result.innerHTML = "時間切れです ⏰ 不正解";
+  result.innerHTML = "時間切れです ⏰";
   result.style.color = "blue";
 }
-
 
 function quizAnswer(answer) {
   clearInterval(timerID);
@@ -31,10 +31,24 @@ function quizAnswer(answer) {
   let result = document.getElementById("quizResult");
 
   if (answer === "HTML") {
-    result.innerHTML = "正解！ HTMLです";
+    result.innerHTML = "正解！🎉 HTMLです";
     result.style.color = "green";
   } else {
-    result.innerHTML = "不正解";
+    result.innerHTML = "不正解…😢";
     result.style.color = "red";
   }
 }
+
+
+function imgLarge() {
+  document.getElementById("quizImg").className = "imageLarge";
+}
+
+function imgSmall() {
+  document.getElementById("quizImg").className = "imageSmall";
+}
+
+function imgNormal() {
+  document.getElementById("quizImg").className = "imageNormal";
+}
+
