@@ -41,16 +41,3 @@ function nazo() {
 }
 
 
-function imgLarge() {
-  document.getElementById("./image./q4163.jpg").className = "imageLarge";
-}
-
-function imgSmall() {
-  document.getElementById("./image./q4163.jpg").className = "imageSmall";
-}
-
-function imgNormal() {
-  document.getElementById("./image./q4163.jpg").className = "imageNormal";
-}
-
-
