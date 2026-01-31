@@ -32,7 +32,7 @@ function nazo1() {
 
   let result = document.getElementById("answer");
 
-  if (ans == "夢") {
+  if (ans == "モノマネ") {
     document.getElementById("result").textContent = "あたり！";
   } else {
     document.getElementById("result").textContent = "はずれ";
