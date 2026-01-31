@@ -42,15 +42,15 @@ function nazo() {
 
 
 function imgLarge() {
-  document.getElementById("quizImg").className = "imageLarge";
+  document.getElementById("./image./q4163.jpg").className = "imageLarge";
 }
 
 function imgSmall() {
-  document.getElementById("quizImg").className = "imageSmall";
+  document.getElementById("./image./q4163.jpg").className = "imageSmall";
 }
 
 function imgNormal() {
-  document.getElementById("quizImg").className = "imageNormal";
+  document.getElementById("./image./q4163.jpg").className = "imageNormal";
 }
 
 
