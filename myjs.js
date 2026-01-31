@@ -1,10 +1,9 @@
-let time = 60;
+let time = 60; 
 let timerID = null;
 
 window.onload = function () {
   startTimer();
 };
-
 
 function startTimer() {
   timerID = setInterval(function () {
@@ -24,11 +23,10 @@ function timeUp() {
   result.style.color = "blue";
 }
 
-
 function nazo() {
   clearInterval(timerID);
 
-  let ans = document.getElementById("answer").value;
+  let ans = document.getElementById("answer").value.trim();
   let result = document.getElementById("quizResult");
 
   if (ans === "モノマネ") {
@@ -39,5 +37,6 @@ function nazo() {
     result.style.color = "red";
   }
 }
+
 
 
