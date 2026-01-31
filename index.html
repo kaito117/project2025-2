@@ -1,35 +1,25 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <title>画像クイズ</title>
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
-
-  <!-- jQuery -->
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-</head>
-
+<!DOCTYPE html> <html lang="ja"> 
+  <head> 
+    <meta charset="UTF-8"> 
+    <title>2025秋期末project</title> 
+    <link rel="stylesheet" href="mystyle.css"> 
+    <script src="myjs.js"></script>
+    </head> 
 <body>
+<h1>画像クイズ</h1>
 
-  <h1 id="title">画像クイズ</h1>
+<p>制限時間：<span id="time">10</span> 秒</p>
 
-  <div class="quiz-box">
-    <p>Q. この画像は何を表していますか？</p>
+<p>この画像は何を表していますか？</p>
 
-    <!-- 問題画像 -->
-    <img id="quizImage" src="https://via.placeholder.com/600x400?text=HTML" alt="クイズ画像">
+<img src="./image/html.png" id="quizImg" class="imagechange" alt="クイズ画像">
 
-    <button onclick="checkAnswer('A')">A. CSS</button>
-    <button onclick="checkAnswer('B')">B. JavaScript</button>
-    <button onclick="checkAnswer('C')">C. HTML</button>
+<p>
+<input type="button" value="HTML" onclick="quizAnswer('HTML');">
+<input type="button" value="CSS" onclick="quizAnswer('CSS');">
+<input type="button" value="JavaScript" onclick="quizAnswer('JavaScript');">
+</p>
 
-    <p id="result"></p>
-  </div>
-
-  <!-- JavaScript -->
-  <script src="script.js"></script>
-</body>
-</html>
-
+<p id="quizResult"></p>
+  </body>
+  
