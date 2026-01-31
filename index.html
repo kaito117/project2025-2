@@ -6,26 +6,24 @@
   <link rel="stylesheet" href="mystyle.css">
   <script src="myjs.js"></script>
 </head>
-
 <body>
 
-<h1> 画像クイズ（完全体）</h1>
+<h1>画像クイズ（完全体）</h1>
 
-<p>制限時間：<span id="time">10</span> 秒</p>
+<p>制限時間：<span id="time">60</span> 秒</p>
 
 <p>この画像は何を表していますか？</p>
 
-<img src="./image./q4163.jpg"
+<img src="./image/q4163.jpg"
      id="quizImg"
-     class="imageNormal"
+     class="imagechange"
      alt="クイズ画像">
 
-<p> 答：<input type="text" id="answer"> 
+<p>答：<input type="text" id="answer"> 
   <input type="button" value="解答" onclick="nazo();"> 
 </p>
 
-
+<p id="quizResult"></p>
 
 </body>
 </html>
-
