@@ -1,18 +1,24 @@
-<!DOCTYPE html> <html lang="ja"> 
-  <head> 
-    <meta charset="UTF-8"> 
-    <title>2025秋期末project</title> 
-    <link rel="stylesheet" href="mystyle.css"> 
-    <script src="myjs.js"></script>
-    </head> 
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Web開発の練習2025秋季</title>
+  <link rel="stylesheet" href="mystyle.css">
+  <script src="myjs.js"></script>
+</head>
+
 <body>
-<h1>画像クイズ</h1>
+
+<h1>練習問題8.1 画像クイズ（完全体）</h1>
 
 <p>制限時間：<span id="time">10</span> 秒</p>
 
 <p>この画像は何を表していますか？</p>
 
-<img src="./image/html.png" id="quizImg" class="imagechange" alt="クイズ画像">
+<img src="./image/html.png"
+     id="quizImg"
+     class="imageNormal"
+     alt="クイズ画像">
 
 <p>
 <input type="button" value="HTML" onclick="quizAnswer('HTML');">
@@ -20,6 +26,14 @@
 <input type="button" value="JavaScript" onclick="quizAnswer('JavaScript');">
 </p>
 
+<p>
+<input type="button" value="大きくする" onclick="imgLarge();">
+<input type="button" value="小さくする" onclick="imgSmall();">
+<input type="button" value="元に戻す" onclick="imgNormal();">
+</p>
+
 <p id="quizResult"></p>
-  </body>
-  
+
+</body>
+</html>
+
